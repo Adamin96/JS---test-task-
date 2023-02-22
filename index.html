@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>tq</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+
+<div class="container">
+	<div>
+		<div class="filters">
+			<div class="filter">
+				<label>Количество элементов</label>
+				<select name="limit">
+					<option>5</option>
+					<option default>10</option>
+					<option>20</option>
+				</select>
+			</div>
+			<div class="filter">
+				<label>Сортировка</label>
+				<select name="sort">
+					<option value="id" default>ID</option>
+					<option value="price">цена</option>
+					<option value="rating">рейтинг</option>
+				</select>
+				<select name="sort-dir">
+					<option value="asc" default>возрастание</option>
+					<option value="desc">убывание</option>
+				</select>
+			</div>
+		</div>
+		<div class="items"></div>
+	</div>
+	<div class="item-details" style="display: none;">
+		<h2 class="title"></h2>
+		<p class="description"></p>
+		<p class="price-wrapper">Цена: <span class="price"></span></p>
+	</div>
+</div>
+
+<template id="item">
+	<div class="item">
+		<span class="title"></span>
+	</div>
+</template>
+
+<script src="./assets/js/infoPopup.js"></script>
+<script src="./assets/js/dnd.js"></script>
+<script src="./assets/js/api.js"></script>
+<script src="./assets/js/index.js"></script>
+
+</body>
+</html>

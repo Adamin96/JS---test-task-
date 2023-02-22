@@ -1,0 +1,43 @@
+html {
+	font-size: 20px;
+}
+
+* {
+	font-size: 1rem;
+}
+
+.container {
+	margin: 0 2rem;
+	display: flex;
+}
+
+.filters {
+	margin-bottom: 0.5rem;
+}
+
+.items .item {
+	border: 1px solid;
+	border-bottom: unset;
+	text-align: center;
+	padding: 0 2rem;
+	cursor: pointer;
+}
+.items .item:last-child {
+	border-bottom: 1px solid;
+}
+.items .item.dragging {
+	background: #eee;
+}
+
+.item-details {
+	max-width: 240px;
+	position: fixed;
+	border: 1px solid;
+	padding: 0.5rem;
+}
+.item-details .title {
+	text-align: center;
+}
+.item-details .price-wrapper {
+	text-align: center;
+}
